@@ -39,7 +39,7 @@ namespace Project.Controllers
             UserManager = userManager;
             SignInManager = signInManager;
         }
-
+        
         /// <summary>
         /// 
         /// </summary>
