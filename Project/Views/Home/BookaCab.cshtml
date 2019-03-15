@@ -1,0 +1,63 @@
+﻿<style>
+    table {
+        border-collapse: collapse;
+        border: 1px solid black;
+    }
+
+    body {
+        background-image: url('../../images/Images/map.jpg');
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+</style>
+
+
+<script src="~/Scripts/bookacab.js"></script>
+
+<script src="~/Scripts/bootstrap.min.js"></script>
+
+<br />
+<div>
+    <h3>Book A Cab</h3>
+    <br />
+    @*<body background="map.jpg">*@
+    @*<img height="900" width="1500" src="~/images/Images/map.jpg" />*@
+    <div>
+        <table width="300" height="200" border="4" @*cellSpacing="3" cellPadding="2"*@ align="left">
+            <tr>
+                <th>Source:</th>
+                <td align="center">
+                    <select name="pref" id="category" onchange="fun()">
+                        <option value="Powai" />Powai</option>
+                        <option value="Vikroli" />Vikroli </option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>Destination:</th>
+                <td align="center">
+                    <select name="ql" id="qlf">
+                        <option value="">--Select--</option>
+                    </select>
+                </td>
+
+            </tr>
+            <tr>
+                <th>Quantity:</th>
+                <td ><input type="text" id="a4" /></td>
+            </tr>
+            <tr>
+                <th>Price :</th>
+                <td><input type="text" id="a5" /></td>
+            </tr>
+            <tr>
+                <td colspan="1" align="center"><input class="btn btn-primary" type="submit" value="GetFair" onClick="calculate()"></td>
+                <td colspan="2" align="center"><a class="btn btn-primary center-block" href="http://localhost:62044/Bookings/Index">BookNow</a></td>
+            </tr>
+        </table>
+        <br />
+        <br />
+        
+    </div>
+</div>

@@ -1,0 +1,168 @@
+﻿
+@{
+    ViewBag.Title = "IndexForHatchAC";
+}
+
+<caption style="font-size:xx-large;font-weight:bolder"><br /><center />Fare Details For Hatch AC<br /></caption>
+
+<html>
+<head>
+    @*<script src="lab4.1.js">
+        </script>*@
+</head>
+<body style="        background-image: url('../../images/Images/background.jpg');
+                     background-repeat: no-repeat;
+                     background-size: 1280px">
+
+
+    <br />
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class="col-sm-6 col-md-offset-3">
+        <div href="#" class="thumbnail">
+
+
+
+            <table border="0" cellpadding="5" cellspacing="10">
+                <tr></tr>
+                <tr>
+
+                    <th>Source Address</th>
+
+                    <td style="margin: 10px; padding: 20px" ;>
+                        <select name="pref" id="SourceAddress" onchange="calculate()">
+                            <option value="Mumbai">Mumbai</option>
+                            <option value="Pune">Pune</option>
+                            <option value="Chennai">Chennai </option>
+                            <option value="Banglore">Banglore </option>
+                        </select>
+                    </td>
+                </tr>
+                <tr></tr>
+                <tr>
+
+                    <th>Destination Address</th>
+                    <td style="margin: 10px; padding: 20px">
+                        <select name="pref" id="DestinationAddress" onchange="calculate()">
+                            <option value="Kurnool">Kurnool</option>
+                            <option value="Hyderabad">Hyderabad</option>
+                            <option value="VijayWada">VijayWada </option>
+                            <option value="Guntur">Guntur </option>
+                        </select>
+                    </td>
+                </tr>
+                @*<tr><th>Quantity:</th><td><input type="text" id="a4" /></td></tr>*@
+                <tr><th style="margin: 10px; padding: 20px">Price :</th><td><input type="text" readonly id="a5" /></td></tr>
+                
+
+            </table>
+            <a aria-label="BookNow" href="http://localhost:62044/Bookings/thankyou"> Confirm Booking</a>
+        </div>
+    </div>
+
+</body>
+</html>
+@section scripts {
+
+    <script type="text/javascript">
+
+        function calculate() {
+            //string1="";
+
+            string1 = document.getElementById("SourceAddress").value;
+            string2 = document.getElementById("DestinationAddress").value;
+            //alert(string1);
+            //var quantity = document.getElementById("a4").value;
+            //alert(quantity)
+            //tv
+            if (string1 == "Mumbai") {
+                if (string2 == "Kurnool") {
+                    total = 3590;
+                }
+                if (string2 == "Hyderabad") {
+                    total = 4980;
+                }
+                if (string2 == "VijayWada") {
+                    total = 4250;
+                }
+                if (string2 == "Guntur") {
+                    total = 4799;
+                }
+
+
+                //alert(total);
+                document.getElementById("a5").value = total;
+            }
+            //Laptop
+            if (string1 == "Pune") {
+                if (string2 == "Kurnool") {
+                    total = 4280;
+                }
+                if (string2 == "Hyderabad") {
+                    total = 5900;
+                }
+                if (string2 == "VijayWada") {
+                    total = 5890;
+                }
+                if (string2 == "Guntur") {
+                    total = 5689;
+                }
+                document.getElementById("a5").value = total;
+            }
+            //phone
+            if (string1 == "Chennai") {
+                if (string2 == "Kurnool") {
+                    total = 4850;
+                }
+                if (string2 == "Hyderabad") {
+                    total = 10522;
+                }
+                if (string2 == "VijayWada") {
+                    total = 6896;
+                }
+                if (string2 == "Guntur") {
+                    total = 7890;
+                }
+
+                //alert(total);
+                document.getElementById("a5").value = total;
+            }
+            //soap
+            if (string1 == "Banglore") {
+                if (string2 == "Kurnool") {
+                    total = 4897;
+                }
+                if (string2 == "Hyderabad") {
+                    total = 4899;
+                }
+                if (string2 == "VijayWada") {
+                    total = 4890;
+                }
+                if (string2 == "Guntur") {
+                    total = 6980;
+                }
+                //alert(total);
+                document.getElementById("a5").value = total;
+            }
+
+
+
+
+            return false;
+        }
+
+
+    </script>
+
+}
+
+
+
+
+

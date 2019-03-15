@@ -1,0 +1,114 @@
+﻿
+
+<style>
+    p {
+        font-family: ff-clan-web-pro, "Helvetica Neue", Helvetica, sans-serif !important;
+        font-size: 20px;
+        line-height: 33px;
+        letter-spacing: -0.1px;
+        color: orangered;
+    }
+
+    h1 {
+        font-size: x-large;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    img {
+        vertical-align: middle;
+    }
+</style>
+<form>
+    <h1 align="center"> CATT Taxis Customer Feedback Survey</h1>
+
+    <br / >
+    <center>
+        <img width="800px" src="~/Images/feedbackimage.jpg" />
+
+    </center>
+    <p>
+        Simply complete the feedback form below and click the submit button.
+        This information helps CATT Taxis improve our service and we greatly appreciate your input.
+    </p>
+    <table width="86%" style="margin-left:8px;margin-bottom:10px;font-size:1.2em;color:#000000;">
+        <tbody>
+            <tr>
+                <td>
+                    <h4><label for="customer_name">Name:</label></h4>
+                    <input type="text" id="customer_name" name="customer_name" maxlength="50"
+                           tabindex="1" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <h4><label for="customer_email"> Email Address:</label></h4>
+                    <input type="text" id="customer_email" name="customer_email" maxlength="50"
+                           class="validate-required-email validation-passed" tabindex="1" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h4>
+                        <label for="subject"> Please rate how your drivers road skills were, did you feel safe and comfortable?</label>
+                    </h4>
+                    <input type="text" id="subject" name="subject" maxlength="250"
+                           class="required validation-failed" tabindex="1" required>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h4>
+                        <label for="subject"> Would you Recommend CATT for others?</label>
+                    </h4>
+                    <input type="text" id="subject" name="subject" maxlength="250"
+                           class="required validation-failed" tabindex="1" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h4>
+                        <label for="subject">
+                            When the taxi arrived, how would you rate the taxi cleanliness,
+                            driver attitude and presentation in general?
+                        </label>
+                    </h4>
+                    <input type="text" id="subject" name="subject" maxlength="250"
+                           class="required validation-failed" tabindex="1" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h4>
+                        <label for="subject"> When booking a taxi in advance were you told of possible delays?</label>
+                    </h4>
+                    <input type="text" id="subject" name="subject" maxlength="250"
+                           class="required validation-failed" tabindex="1" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h4>
+                        <label class="other" for="sharing_pages_other"> If other comments, please specify:</label>
+                    </h4>
+                    <input type="text" name="sharing_pages_other" tabindex="1" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <center>
+                        <button class="btn btn-success avail-now-btn" style="align-items:center"
+                                role="button" formaction='@Url.Action("Thankyou","Home")'>
+                            Submit
+                        </button>
+                    </center>
+
+                    @*<center>
+                            <a href="http://localhost:54770/Home/Thankyou"
+                               class="btn btn-primary avail-now-btn" role="button" target="_black">Submit</a>
+                        </center>*@
+                </td>
+            </tr>
+    </table>
+</form>

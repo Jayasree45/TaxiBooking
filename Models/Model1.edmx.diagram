@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="deabed7ea7e041cdbd0dba05c180d167" Name="Diagram1">
+        <EntityTypeShape EntityType="Training_12DecMumbaiModel.Admin" Width="1.5" PointX="3.875" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Training_12DecMumbaiModel.Booking" Width="1.5" PointX="5.625" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Training_12DecMumbaiModel.Customer" Width="1.5" PointX="0.625" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="Training_12DecMumbaiModel.Employee" Width="1.5" PointX="1.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Training_12DecMumbaiModel.EmployeeRoster" Width="1.5" PointX="5.875" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Training_12DecMumbaiModel.Taxi" Width="1.5" PointX="3.5" PointY="4" IsExpanded="true" />
+        <AssociationConnector Association="Training_12DecMumbaiModel.FK__Admin__CustomerI__7251D655" ManuallyRouted="false" />
+        <AssociationConnector Association="Training_12DecMumbaiModel.FK__Admin__EmployeeI__715DB21C" ManuallyRouted="false" />
+        <AssociationConnector Association="Training_12DecMumbaiModel.FK__Booking__Custome__2141CF68" ManuallyRouted="false" />
+        <AssociationConnector Association="Training_12DecMumbaiModel.FK__Booking__TaxiID__204DAB2F" ManuallyRouted="false" />
+        <AssociationConnector Association="Training_12DecMumbaiModel.FK__EmployeeR__Emplo__77168B72" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
